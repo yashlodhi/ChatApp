@@ -8,7 +8,7 @@ const httpServer = createServer(app);
 const io = new Server(httpServer);
 
 io.on('connection', (socket) => {
-    console.log("New Socket : ", socket.id);
+    console.log("New Socket : ", socket.id)
 });
 
 app.use( cors({ origin: "http://localhost:3000", method: ["GET", "POST"] }) )
